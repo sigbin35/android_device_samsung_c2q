@@ -8,7 +8,7 @@
 LOCAL_PATH := device/samsung/c2q
 
 # Enable updating of APEXes
-$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+#$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # API levels
 BOARD_API_LEVEL := 30
@@ -44,4 +44,4 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
 # Inherit the proprietary files
-$(call inherit-product, vendor/twrp/config/BoardConfig.mk)
+$(call inherit-product, vendor/twrp/config/BoardConfigTWRP.mk)
