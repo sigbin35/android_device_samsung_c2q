@@ -43,5 +43,5 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
-# Inherit the proprietary files
-$(call inherit-product, vendor/twrp/config/common.mk)
+# Inherit some TWRP proprietary files
+$(call inherit-product, vendor/twrp/config/BoardConfigTWRP.mk)
